@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deer</title>
+</head>
+<h1> life of a deer </h1>
+<body>
+<nav>
+	<ul>
+		<li><a href="#">Run</a></li>
+		<li><a href="#">Sleep</a></li>
+		<li><a href="#">Eat</a></li>
+			<li id="droplist">
+				<a href="#">????</a>
+				<div id="container">
+				<a href="#">GUNS</a>
+				<a href="#">MATRICIDE</a>
+				<a href="#">SLAUGHTER</a>
+				</div>
+				</li>
+
+
+	</ul>
+
+</nav>
+	
+	
+<div id="deer">
+<img height="400px" src="http://orig04.deviantart.net/cff0/f/2012/049/9/1/deer_running_test_by_nevaeh_lee-d4q3low.gif">
+</div>
+<p>
+	<button onclick="run()">frolick</button>
+</p>
+
+
+<footer>
+	<img height="140px" width="100%" src="https://s-media-cache-ak0.pinimg.com/originals/fd/dc/3a/fddc3a753a659cfdfb28599033fab79f.png">
+</footer>
+		
+	
+
+
+<script>
+	function run(){
+		var elem = document.getElementById("deer");
+		var pos = 0;
+		var id = setInterval(frame, 3);
+		function frame (){
+			if (pos == 1500) {
+				clearInterval (id);
+			} else {
+				pos++;
+				elem.style.right = pos + 'px';
+	
+			}
+		}
+	}
+</script>
+
+
+</script>
+
+
+</body>
+<style type="text/css">
+	
+	#deer {
+		position: absolute;
+		right: 10px;
+		bottom: 5px;
+		z-index: -1;
+		
+	}
+
+
+	footer {
+		margin-left:0;
+		margin-top: 350px;
+
+
+	}
+	body {
+		background-color: aqua;
+	}
+ul{
+	padding-left: 400px;
+}
+
+	ul li {
+		display: inline-block;
+		padding-left: 50px;
+		
+	}
+
+
+	li a {
+		text-align: center;
+		text-decoration: none;
+		font-family: courier;
+		color: black;
+
+
+	}
+	#container{
+		display: none;
+		position:absolute;
+		text-decoration: none;
+			}
+
+	a:hover {
+		background-color: rgba(0,0,0,.5)
+	}
+
+
+	#droplist:hover #container {
+			display:block;
+			}
+	#container a {
+				display: block;
+				padding-top: 10px;
+			}
+
+			h1{
+				text-align: center;
+				font-family: courier;
+			}
+</style>
+</html>
+
+
